@@ -12,6 +12,12 @@ html {
   text-size-adjust: 100%;
 
   color: #222;
+  line-height: 1.5;
+  font-family: "Crimson Text", serif;
+}
+
+body {
+  margin: 0;
 }
 
 *, *::before, *::after {
@@ -20,6 +26,8 @@ html {
 
 article {
   max-width: 43em;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 article h1 {
@@ -28,6 +36,10 @@ article h1 {
 
 article header {
   border-bottom: 1px solid #999;
+}
+
+article p {
+  margin: 0;
 }
 
 article header p {
@@ -42,8 +54,142 @@ blockquote {
   max-width: 24em;
   color: #555;
   font-size: 1.125rem;
+  margin: 0 auto;
+}
+
+article ol {
+  padding: 0 1em;
 }
 
 .quote {
   color: #999;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    line-height: 1.3;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  article h1 {
+    margin: 1.4rem 0 0;
+  }
+
+  article p {
+    margin: 1.4rem 0;
+  }
+
+  article header p {
+    font-size: 1rem;
+    margin: 0 0 1.4rem;
+  }
+
+  article > p:last-child {
+    padding-bottom: 1.4rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 1.1em;
+    line-height: 1.4;
+    background-color: white;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  article h1 {
+    margin: 1.4rem 0 0;
+  }
+
+  article p {
+    margin: 1.4rem 0;
+  }
+
+  article header p {
+    font-size: 1rem;
+    margin: 0 0 1.4rem;
+  }
+
+  article > p:last-child {
+    padding-bottom: 1.4rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 1.2em;
+    line-height: 1.5;
+    background-color: white;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  article h1 {
+    margin: 1.5rem 0 0;
+  }
+
+  article p {
+    margin: 1.5rem 0;
+  }
+
+  article header p {
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
+  }
+
+  article > p:last-child {
+    padding-bottom: 1.5rem;
+  }
+
+  article ol {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 1.3em;
+    background-color: white;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  article h1 {
+    margin: 1.5rem 0 0;
+  }
+
+  article p {
+    margin: 1.5rem 0;
+  }
+
+  article header p {
+    font-size: 1rem;
+    margin: 0 0 1.5rem;
+  }
+
+  article > p:last-child {
+    padding-bottom: 1.5rem;
+  }
+
+  article ol {
+    padding: 0;
+  }
+
 }
